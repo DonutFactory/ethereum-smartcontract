@@ -8,15 +8,15 @@ require('dotenv').config()
  */
 module.exports = {
   solidity: "0.8.4",
-  // defaultNetwork: "rinkeby",
-  // networks: {
-  //   hardhat: {
-  //   },
-  //   rinkeby: {
-  //     url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_API}`,
-  //     accounts: [process.env.PRIVATE_KEY]
-  //   }
-  // },
+  defaultNetwork: "rinkeby",
+  networks: {
+    hardhat: {
+    },
+    rinkeby: {
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_API}`,
+      accounts: [process.env.PRIVATE_KEY]
+    }
+  },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
